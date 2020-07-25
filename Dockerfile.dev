@@ -1,0 +1,17 @@
+# use base image
+
+FROM node:alpine
+
+# add dependencies 
+
+WORKDIR /app
+
+COPY ./package.json ./
+
+RUN npm install
+
+# COPY ./ ./
+
+# Add startup command
+
+CMD [ "npm","run","start" ]
