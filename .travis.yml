@@ -1,0 +1,10 @@
+sudo: required
+language: generic 
+
+services:
+    - docker
+before_install:
+    - docker build -t onlyrahul4u/frontenddocker -f Dockerfile.dev .
+
+script:
+    - docker run -e CI=true onlyrahul4u/frontenddocker npm run test
