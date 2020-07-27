@@ -8,7 +8,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Noe deployed via feature branch
+          New AWS Env
         </p>
         <a
           className="App-link"
